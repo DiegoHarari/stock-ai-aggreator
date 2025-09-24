@@ -1,0 +1,17 @@
+{
+  "name": "stock-ai-aggregator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm:dev:ui\" \"npm:dev:server\"",
+    "dev:ui": "cd ui && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "cd ui && npm run build && cd ../server && npm run build",
+    "start": "node server/dist/index.js",
+    "test": "cd ui && npm test --watchAll=false && cd ../server && npm test",
+    "zip": "echo 'Use the provided zip in /mnt/data/stock-ai-aggregator.zip'"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

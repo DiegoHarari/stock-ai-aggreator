@@ -5,7 +5,7 @@ import './styles.css'
 export default function App() {
   return (
     <div className="app">
-      <h1>Stock AI Aggregator</h1>
+      <h1>Stock and Token AI Aggregator</h1>
       <p>Type a stock ticker (e.g. TSLA) and choose providers. The backend will aggregate AI responses and a mini conclusion.</p>
       <TickerForm />
     </div>
